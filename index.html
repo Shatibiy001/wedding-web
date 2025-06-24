@@ -1,0 +1,1631 @@
+<html lang="en" style="scroll-behavior:smooth;"></html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abiola Wedding</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: #f8f8f8;
+      color: #333;
+    }
+
+    header {
+      background: url('/wedding/love.jpg') center/cover;
+      padding: 6rem 2rem;
+      color: white;
+      text-align: center;
+      position: relative;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 4rem;
+      margin: 0;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+    }
+
+    header p {
+      font-size: 1.4rem;
+      margin-top: 1rem;
+    }
+
+    #countdown {
+      font-size: 1.2rem;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      display: inline-block;
+      margin-top: 1rem;
+    }
+
+    .content {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+    }
+
+    .section {
+      margin-bottom: 2.5rem;
+    }
+
+    .section h2 {
+      font-family: 'Playfair Display', serif;
+      color: #006400;
+      margin-bottom: 0.5rem;
+      font-size: 2rem;
+    }
+
+    .quote {
+      font-style: italic;
+      background: #f0f0f0;
+      padding: 1rem;
+      border-left: 4px solid #006400;
+      margin-bottom: 1rem;
+    }
+
+    .arabic {
+      font-family: 'Scheherazade New', serif;
+      font-size: 1.4rem;
+      color: #444;
+      direction: rtl;
+    }
+
+    .love-story {
+      background: #fff5f7;
+      padding: 2rem;
+      border-radius: 12px;
+    }
+
+    .love-story p {
+      line-height: 1.6;
+    }
+
+    .highlight {
+      color: #d6336c;
+      font-weight: bold;
+    }
+
+    .google-map {
+      margin: 2rem 0;
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 10px;
+    }
+
+    .fun-section {
+      background: #fffbe6;
+      padding: 2rem;
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .fun-section h2 {
+      color: #b7791f;
+    }
+
+    .surprise-btn {
+      margin-top: 1rem;
+      background-color: #ffa500;
+      color: white;
+      border: none;
+      padding: 0.5rem 1.5rem;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 id="main-title">💍 Abiola Affairs <span class="heart">💖</span></h1>
+    <style>
+      #main-title {
+      display: inline-block;
+      font-family: 'Playfair Display', serif;
+      font-size: 4rem;
+      margin: 0;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+      transition: color 0.4s cubic-bezier(.4,0,.2,1), transform 0.4s cubic-bezier(.4,0,.2,1);
+      cursor: pointer;
+      letter-spacing: 2px;
+      }
+      #main-title .heart {
+      display: inline-block;
+      transition: transform 0.4s cubic-bezier(.4,0,.2,1), filter 0.4s cubic-bezier(.4,0,.2,1);
+      will-change: transform;
+      }
+      #main-title:hover {
+      color: #ffa500;
+      transform: scale(1.04) rotate(-2deg);
+      text-shadow: 0 4px 24px rgba(255,165,0,0.3), 2px 2px 8px rgba(0,0,0,0.5);
+      }
+      #main-title:hover .heart {
+      transform: scale(1.2) rotate(-10deg);
+      filter: drop-shadow(0 0 8px #d6336c);
+      animation: heartbeat 0.7s infinite alternate;
+      }
+      @keyframes heartbeat {
+      0% { transform: scale(1.2) rotate(-10deg);}
+      50% { transform: scale(1.35) rotate(-10deg);}
+      100% { transform: scale(1.2) rotate(-10deg);}
+      }
+    </style>
+    <script type="module">
+      // Modern JS: Animate title on click
+      const mainTitle = document.getElementById('main-title');
+      mainTitle.addEventListener('click', () => {
+      mainTitle.animate([
+        { transform: 'scale(1) rotate(0deg)' },
+        { transform: 'scale(1.1) rotate(-3deg)' },
+        { transform: 'scale(1) rotate(0deg)' }
+      ], {
+        duration: 600,
+        easing: 'cubic-bezier(.4,0,.2,1)'
+      });
+      });
+    </script>
+    <p>You're invited to our AQD & Walimatun Nikaah 🎉</p>
+    <div id="confetti-canvas-container" style="position:relative; width:100%; height:0;">
+      <canvas id="confetti-canvas" style="position:absolute; left:0; top:0; width:100%; height:100%; pointer-events:none;"></canvas>
+    </div>
+    <div id="magic-box" style="margin:2rem auto 0; display:inline-block; cursor:pointer; background:linear-gradient(135deg,#ffa500 40%,#d6336c 100%); border-radius:16px; box-shadow:0 4px 24px rgba(214,51,108,0.15); padding:1.5rem 2.5rem; color:#fff; font-size:1.4rem; font-family:'Playfair Display',serif; transition:transform 0.2s;">
+      🎁 Click for a Blessing!
+    </div>
+    <div id="blessing-message" style="margin-top:1.5rem; font-size:1.2rem; color:#fff; text-shadow:0 2px 8px #d6336c; display:none;"></div>
+    <style>
+      #magic-box:hover {
+      transform: scale(1.06) rotate(-2deg);
+      box-shadow: 0 8px 32px rgba(255,165,0,0.25), 0 4px 24px rgba(214,51,108,0.15);
+      background:linear-gradient(135deg,#d6336c 40%,#ffa500 100%);
+      }
+      #blessing-message {
+      animation: blessingFadeIn 1s cubic-bezier(.4,0,.2,1);
+      }
+      @keyframes blessingFadeIn {
+      from { opacity:0; transform:translateY(20px);}
+      to { opacity:1; transform:translateY(0);}
+      }
+    </style>
+    <script>
+      // Confetti Animation
+      const confettiCanvas = document.getElementById('confetti-canvas');
+      const confettiContainer = document.getElementById('confetti-canvas-container');
+      function resizeConfettiCanvas() {
+      confettiContainer.style.height = (window.innerHeight * 0.5) + 'px';
+      confettiCanvas.width = confettiContainer.offsetWidth;
+      confettiCanvas.height = confettiContainer.offsetHeight;
+      }
+      resizeConfettiCanvas();
+      window.addEventListener('resize', resizeConfettiCanvas);
+
+      function randomColor() {
+      const colors = ['#ffa500','#d6336c','#fffbe6','#006400','#b7791f','#fff5f7','#ffecb3','#f0f0f0'];
+      return colors[Math.floor(Math.random()*colors.length)];
+      }
+      function launchConfetti() {
+      const ctx = confettiCanvas.getContext('2d');
+      const W = confettiCanvas.width, H = confettiCanvas.height;
+      let confettis = [];
+      for(let i=0;i<80;i++){
+        confettis.push({
+        x: Math.random()*W,
+        y: Math.random()*-H,
+        r: 6+Math.random()*8,
+        d: 2+Math.random()*2,
+        color: randomColor(),
+        tilt: Math.random()*10-5,
+        tiltAngle: 0,
+        tiltAngleIncremental: (Math.random()*0.07)+.05
+        });
+      }
+      let angle = 0;
+      let animation;
+      function draw() {
+        ctx.clearRect(0,0,W,H);
+        for(let i=0;i<confettis.length;i++){
+        let c = confettis[i];
+        ctx.beginPath();
+        ctx.lineWidth = c.r;
+        ctx.strokeStyle = c.color;
+        ctx.moveTo(c.x + c.tilt + c.r/3, c.y);
+        ctx.lineTo(c.x + c.tilt, c.y + c.tilt + c.r/3);
+        ctx.stroke();
+        }
+        update();
+      }
+      function update() {
+        angle += 0.01;
+        for(let i=0;i<confettis.length;i++){
+        let c = confettis[i];
+        c.y += (Math.cos(angle + c.d) + 1 + c.r/2)/2;
+        c.x += Math.sin(angle);
+        c.tiltAngle += c.tiltAngleIncremental;
+        c.tilt = Math.sin(c.tiltAngle) * 15;
+        if(c.y > H){
+          c.x = Math.random()*W;
+          c.y = -10;
+          c.tilt = Math.random()*10-5;
+        }
+        }
+      }
+      let frames = 0;
+      function animate() {
+        draw();
+        frames++;
+        if(frames<120) animation = requestAnimationFrame(animate);
+        else ctx.clearRect(0,0,W,H);
+      }
+      animate();
+      }
+
+      // Magic Blessing Box
+      const blessings = [
+      "May your union be filled with endless joy and mercy 🌹",
+      "Wishing you a lifetime of love, laughter, and barakah 💞",
+      "May Allah grant you tranquility and happiness together 🤲",
+      "May your home be filled with light, peace, and prosperity 🏡",
+      "May your hearts always find comfort in each other 💖",
+      "May your love story inspire generations to come ✨"
+      ];
+      document.getElementById('magic-box').onclick = function() {
+      const msg = blessings[Math.floor(Math.random()*blessings.length)];
+      const blessingDiv = document.getElementById('blessing-message');
+      blessingDiv.textContent = msg;
+      blessingDiv.style.display = 'block';
+      launchConfetti();
+      };
+    </script>
+    <div id="countdown-container" style="margin-top:2rem; display:flex; justify-content:center;">
+      <div id="countdown" style="display:flex; gap:1.2rem; background:rgba(255,255,255,0.18); border-radius:12px; padding:0.8rem 2rem; box-shadow:0 2px 12px rgba(0,0,0,0.08); font-size:1.1rem; font-family:'Open Sans',sans-serif; font-weight:600; color:#fff;">
+      <div class="countdown-item">
+        <span class="countdown-num" id="cd-days">--</span>
+        <span class="countdown-label">Days</span>
+      </div>
+      <div class="countdown-sep">:</div>
+      <div class="countdown-item">
+        <span class="countdown-num" id="cd-hours">--</span>
+        <span class="countdown-label">Hours</span>
+      </div>
+      <div class="countdown-sep">:</div>
+      <div class="countdown-item">
+        <span class="countdown-num" id="cd-mins">--</span>
+        <span class="countdown-label">Mins</span>
+      </div>
+      <div class="countdown-sep">:</div>
+      <div class="countdown-item">
+        <span class="countdown-num" id="cd-secs">--</span>
+        <span class="countdown-label">Secs</span>
+      </div>
+      </div>
+    </div>
+    <style>
+      #countdown {
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      letter-spacing: 1px;
+      }
+      .countdown-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-width: 48px;
+      }
+      .countdown-num {
+      font-size: 2.1rem;
+      font-family: 'Playfair Display', serif;
+      color: #ffa500;
+      text-shadow: 0 2px 8px rgba(214,51,108,0.15);
+      margin-bottom: 0.1em;
+      transition: color 0.3s;
+      }
+      .countdown-label {
+      font-size: 0.85rem;
+      color: #fffbe6;
+      opacity: 0.85;
+      letter-spacing: 0.5px;
+      }
+      .countdown-sep {
+      font-size: 2rem;
+      color: #fff;
+      opacity: 0.7;
+      margin: 0 0.2em;
+      font-weight: bold;
+      line-height: 1;
+      }
+      @media (max-width: 600px) {
+      #countdown {
+        padding: 0.7rem 0.5rem;
+        font-size: 0.98rem;
+        gap: 0.6rem;
+      }
+      .countdown-num {
+        font-size: 1.3rem;
+      }
+      .countdown-label {
+        font-size: 0.7rem;
+      }
+      #countdown-container {
+        padding: 0 0.2rem;
+      }
+      }
+    </style>
+    <script>
+      // Animated Countdown Timer
+      function animateCountdownNum(el, newVal) {
+      if (el.textContent !== newVal) {
+        el.animate([
+        { transform: 'scale(1)', color: '#ffa500' },
+        { transform: 'scale(1.25)', color: '#d6336c' },
+        { transform: 'scale(1)', color: '#ffa500' }
+        ], { duration: 350, easing: 'cubic-bezier(.4,0,.2,1)' });
+        el.textContent = newVal;
+      }
+      }
+      function updateCountdown() {
+      const eventDate = new Date("July 26, 2025 00:00:00").getTime();
+      const now = new Date().getTime();
+      let gap = eventDate - now;
+
+      if (gap < 0) gap = 0;
+
+      const day = 1000 * 60 * 60 * 24;
+      const hour = 1000 * 60 * 60;
+      const min = 1000 * 60;
+      const sec = 1000;
+
+      const days = Math.floor(gap / day);
+      const hours = Math.floor((gap % day) / hour);
+      const mins = Math.floor((gap % hour) / min);
+      const secs = Math.floor((gap % min) / sec);
+
+      animateCountdownNum(document.getElementById('cd-days'), days);
+      animateCountdownNum(document.getElementById('cd-hours'), hours.toString().padStart(2, '0'));
+      animateCountdownNum(document.getElementById('cd-mins'), mins.toString().padStart(2, '0'));
+      animateCountdownNum(document.getElementById('cd-secs'), secs.toString().padStart(2, '0'));
+      }
+      updateCountdown();
+      setInterval(updateCountdown, 1000);
+    </script></div>
+  </header>
+
+  <!-- Blessing Popup Modal -->
+  <div id="blessing-popup" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:99999;align-items:center;justify-content:center;background:rgba(0,0,0,0.18);">
+    <div style="background:linear-gradient(135deg,#fffbe6 60%,#ffa500 100%);padding:2rem 2.5rem;border-radius:18px;box-shadow:0 8px 32px #d6336c22;max-width:90vw;min-width:260px;text-align:center;position:relative;">
+      <span id="blessing-flower" style="font-size:2.2em;display:block;margin-bottom:0.7em;color:#d6336c;">🌸</span>
+      <script>
+        // Animate flower emoji every 5 seconds
+        const flower = document.getElementById('blessing-flower');
+        const flowers = ['🌸','🌷','🌹','🌺','🌻','💐','🌼'];
+        setInterval(() => {
+          const idx = Math.floor(Math.random() * flowers.length);
+          flower.textContent = flowers[idx];
+        }, 5000);
+      </script>
+      <div style="font-family:'Scheherazade New',serif;font-size:1.5em;color:#006400;direction:rtl;margin-bottom:0.7em;">
+        بارك الله لكما وبارك عليكما وجمع بينكما في خير
+      </div>
+      <div style="font-size:1.08em;color:#b7791f;margin-bottom:1em;">May Allah bless you both, shower His blessings upon you, and unite you in goodness.</div>
+      <button id="close-blessing-popup" style="background:linear-gradient(90deg,#d6336c 0%,#ffa500 100%);color:#fff;border:none;padding:0.5em 1.4em;border-radius:8px;font-size:1em;font-weight:bold;cursor:pointer;transition:background 0.2s;">Close</button>
+    </div>
+  </div>
+  <style>
+    #blessing-popup {
+      animation: blessingFadeIn 0.5s cubic-bezier(.4,0,.2,1);
+    }
+    @keyframes blessingFadeIn {
+      from { opacity:0; }
+      to { opacity:1; }
+    }
+    #blessing-popup > div {
+      animation: blessingPop 0.5s cubic-bezier(.4,0,.2,1);
+    }
+    @keyframes blessingPop {
+      0% { transform: scale(0.85); opacity:0; }
+      100% { transform: scale(1); opacity:1; }
+    }
+    #close-blessing-popup:hover {
+      background:linear-gradient(90deg,#ffa500 0%,#d6336c 100%);
+      color:#fffbe6;
+      transform:scale(1.04);
+    }
+    @media (max-width: 600px) {
+      #blessing-popup > div {
+        padding: 1.2rem 0.7rem;
+        font-size: 1em;
+      }
+    }
+  </style>
+  <script>
+    // Blessing Popup Logic
+    const blessingPopup = document.getElementById('blessing-popup');
+    const closeBlessingBtn = document.getElementById('close-blessing-popup');
+    let blessingTimeout;
+    function showBlessingPopup() {
+      blessingPopup.style.display = 'flex';
+      clearTimeout(blessingTimeout);
+      blessingTimeout = setTimeout(() => {
+        blessingPopup.style.display = 'none';
+      }, 1800);
+    }
+    closeBlessingBtn.onclick = () => {
+      blessingPopup.style.display = 'none';
+      clearTimeout(blessingTimeout);
+    };
+    // Show every 2 seconds
+    setInterval(showBlessingPopup, 9000);
+  </script>
+  <div class="content">
+    <div class="section love-story" id="love-story-section">
+      <h2>❤️ Our Love Story</h2>
+      <div id="love-story-content">
+      <p id="love-story-short">Once upon a scroll and a smile, <span class="highlight">Uthman</span> and <span class="highlight">Ameenah</span> crossed paths not by coincidence, but by divine alignment. A random exchange on a community project led to late-night conversations, shared dreams, and the laughter that fills every gap.</p>
+      <p id="love-story-full" style="display:none;">Once upon a scroll and a smile, <span class="highlight">Uthman</span> and <span class="highlight">Ameenah</span> crossed paths not by coincidence, but by divine alignment. A random exchange on a community project led to late-night conversations, shared dreams, and the laughter that fills every gap.<br><br>
+      As days turned into months, their bond grew stronger, built on faith, respect, and a shared vision for the future. Through every challenge and every joy, they found in each other a partner, a confidant, and a best friend. Now, as they embark on this new chapter, they invite you to witness and celebrate the love that brought them together.</p>
+      <button class="read-more-btn" id="read-more-btn" onclick="toggleLoveStory()">Read More <span style="font-size:1.2em;">&#8595;</span></button>
+      <style>
+        .read-more-btn {
+          background: linear-gradient(90deg, #d6336c 0%, #ffa500 100%);
+          color: #fff;
+          border: none;
+          padding: 0.6rem 1.6rem;
+          border-radius: 8px;
+          font-size: 1rem;
+          font-family: 'Open Sans', sans-serif;
+          font-weight: bold;
+          cursor: pointer;
+          box-shadow: 0 2px 8px rgba(214,51,108,0.15);
+          transition: background 0.3s, transform 0.2s;
+          margin-top: 1rem;
+        }
+        .read-more-btn:hover {
+          background: linear-gradient(90deg, #ffa500 0%, #d6336c 100%);
+          transform: translateY(-2px) scale(1.04);
+        }
+      </style>
+      </div>
+    </div>
+
+    <div class="section" id="beachlos-section" style="margin-bottom:2.5rem;">
+      <h2 style="color:#006400;display:flex;align-items:center;gap:0.5em;cursor:pointer;">
+        <span>🏖️ Beachlos Night – Guys-Only Pre-Wedding Event</span>
+        <span id="beachlos-toggle-icon" style="font-size:1.2em;transition:transform 0.3s;">&#9660;</span>
+      </h2>
+      <div id="beachlos-content" style="background:linear-gradient(90deg,#fffbe6 60%,#fff 100%);border-radius:10px;padding:1.3rem 1.5rem;margin-bottom:1.2rem;box-shadow:0 2px 8px #00640022;transition:max-height 0.5s cubic-bezier(.4,0,.2,1),opacity 0.5s;overflow:hidden;max-height:600px;opacity:1;">
+        <ul style="list-style:none;padding:0;margin:0;font-size:1.1em;color:#333;">
+          <li><strong>📅 Date:</strong> <span id="beachlos-date">Friday, 27th</span></li>
+          <li><strong>🕛 Time:</strong> <span id="beachlos-time">Starts at 12:00 AM</span></li>
+          <li><strong>📍 Location:</strong> <span id="beachlos-location">Ibadan</span></li>
+          <li><strong>👬 Note:</strong> <span style="color:#d6336c;font-weight:bold;">Strictly for guys only</span></li>
+          <li><strong>🍽️ Includes:</strong> Snacks + Overnight accommodation</li>
+        </ul>
+        <div style="margin-top:1.2rem;text-align:center;">
+          <button id="beachlos-add-calendar" class="surprise-btn" style="background:linear-gradient(90deg,#006400 0%,#ffa500 100%);color:#fff;font-weight:bold;">📆 Add to Calendar</button>
+          <button id="beachlos-directions" class="surprise-btn" style="background:linear-gradient(90deg,#ffa500 0%,#006400 100%);color:#fff;font-weight:bold;margin-left:0.7em;">🗺️ Get Directions</button>
+        </div>
+        <div id="beachlos-toast" style="display:none;margin-top:1.2rem;text-align:center;color:#006400;font-weight:bold;"></div>
+      </div>
+      <style>
+        #beachlos-section h2:hover {
+          color: #ffa500;
+          letter-spacing: 1px;
+        }
+        #beachlos-content {
+          box-shadow: 0 4px 18px #00640011;
+        }
+        #beachlos-add-calendar, #beachlos-directions {
+          margin-top: 0.5em;
+          font-size: 1rem;
+          border: none;
+          border-radius: 8px;
+          padding: 0.6rem 1.4rem;
+          cursor: pointer;
+          transition: background 0.3s, color 0.2s, transform 0.2s;
+        }
+        #beachlos-add-calendar:hover, #beachlos-directions:hover {
+          background: linear-gradient(90deg,#ffa500 0%,#006400 100%);
+          color: #fffbe6;
+          transform: scale(1.04);
+        }
+        @media (max-width: 600px) {
+          #beachlos-content {
+            padding: 1rem 0.5rem;
+          }
+          #beachlos-section h2 {
+            font-size: 1.1rem;
+          }
+        }
+      </style>
+      <script>
+        // Toggle Beachlos Section
+        const beachlosTitle = document.querySelector('#beachlos-section h2');
+        const beachlosContent = document.getElementById('beachlos-content');
+        const beachlosIcon = document.getElementById('beachlos-toggle-icon');
+        let beachlosOpen = true;
+        beachlosTitle.onclick = function() {
+          beachlosOpen = !beachlosOpen;
+          if(beachlosOpen) {
+            beachlosContent.style.maxHeight = '600px';
+            beachlosContent.style.opacity = '1';
+            beachlosIcon.style.transform = 'rotate(0deg)';
+            beachlosIcon.innerHTML = '&#9660;';
+          } else {
+            beachlosContent.style.maxHeight = '0';
+            beachlosContent.style.opacity = '0';
+            beachlosIcon.style.transform = 'rotate(-90deg)';
+            beachlosIcon.innerHTML = '&#9654;';
+          }
+        };
+
+        // Add to Calendar (ICS file)
+        document.getElementById('beachlos-add-calendar').onclick = function() {
+          const icsContent =
+            "BEGIN:VCALENDAR\nVERSION:2.0\nBEGIN:VEVENT\n" +
+            "SUMMARY:Beachlos Night – Guys-Only Pre-Wedding Event\n" +
+            "DTSTART:20250727T120000\n" +
+            "DTEND:20250728T090000\n" +
+            "LOCATION:Ibadan\n" +
+            "DESCRIPTION:Strictly for guys only. Includes food and overnight accommodation.\n" +
+            "END:VEVENT\nEND:VCALENDAR";
+          const blob = new Blob([icsContent], {type: 'text/calendar'});
+          const url = URL.createObjectURL(blob);
+          const a = document.createElement('a');
+          a.href = url;
+          a.download = 'Beachlos_Night.ics';
+          document.body.appendChild(a);
+          a.click();
+          setTimeout(()=>{document.body.removeChild(a);URL.revokeObjectURL(url);}, 100);
+          showBeachlosToast("Event added to your calendar!");
+        };
+
+        // Directions Button
+        document.getElementById('beachlos-directions').onclick = function() {
+          window.open("https://www.google.com/maps/search/?api=1&query=Ibadan", "_blank");
+          showBeachlosToast("Opening directions in Google Maps...");
+        };
+
+        // Toast message
+        function showBeachlosToast(msg) {
+          const toast = document.getElementById('beachlos-toast');
+          toast.textContent = msg;
+          toast.style.display = 'block';
+          setTimeout(()=>{toast.style.display='none';}, 2200);
+        }
+      </script>
+    </div>
+    <div class="section">
+      <h2>📍 Google Map Location</h2>
+      <div id="map-info" style="margin-bottom:1rem;">
+        <p>
+          <strong>Venue:</strong> Akuro Mosque, Ibadan, Nigeria<br>
+          <span id="open-maps-container">
+        <button id="open-maps-btn" style="background:#ffa500;color:#fff;border:none;padding:0.5rem 1.2rem;border-radius:8px;cursor:pointer;font-size:1rem;transition:background 0.2s;">
+          📍 Open in Google Maps
+        </button>
+          </span>
+        </p>
+      </div>
+      <script>
+        document.getElementById('open-maps-btn').onclick = () => {
+          const url = "https://www.google.com/maps/dir/?api=1&destination=Akuro+Mosque,+Ibadan,+Nigeria";
+          window.open(url, '_blank');
+        };
+      </script>
+      <p style="margin-bottom:0.5rem;">Or interact with the map below to explore or get directions:</p>
+      <div class="google-map">
+        <iframe src="https://maps.google.com/maps?q=Akuro%20Mosque%2C%20Ibadan%2C%20Nigeria&t=&z=15&ie=UTF8&iwloc=&output=embed"></iframe>
+      </div>
+    </div>
+    <div class="section" id="dress-code-section" style="margin-bottom:2.5rem;">
+      <h2 style="color:#b7791f; display:flex; align-items:center; gap:0.5em;">
+        <span>👗 Dress Code</span>
+        <span id="dress-toggle-icon" style="font-size:1.2em; transition:transform 0.3s;">&#9660;</span>
+      </h2>
+      <div id="dress-code-content" style="background:linear-gradient(90deg,#fffbe6 60%,#fff 100%); border-radius:10px; padding:1.3rem 1.5rem; margin-bottom:1.2rem; box-shadow:0 2px 8px rgba(255,215,0,0.08); transition:max-height 0.5s cubic-bezier(.4,0,.2,1), opacity 0.5s; overflow:hidden; max-height:600px; opacity:1;">
+        <div style="display:flex; flex-wrap:wrap; gap:1.5rem; align-items:center;">
+          <div style="flex:1 1 180px; min-width:160px; text-align:center;">
+            <div style="display:inline-block; background:linear-gradient(135deg,#ffd700 60%,#fff 100%); border-radius:50%; width:90px; height:90px; box-shadow:0 2px 12px #ffd70033; margin-bottom:0.7em;">
+              <span style="font-size:2.7em; line-height:90px; color:#b7791f;">👑</span>
+            </div>
+            <div style="font-weight:bold; color:#b7791f; font-size:1.1em;">Gold</div>
+          </div>
+          <div style="flex:1 1 180px; min-width:160px; text-align:center;">
+            <div style="display:inline-block; background:linear-gradient(135deg,#fff 60%,#ffd700 100%); border-radius:50%; width:90px; height:90px; box-shadow:0 2px 12px #fffbe6; margin-bottom:0.7em;">
+              <span style="font-size:2.7em; line-height:90px; color:#aaa;">🤍</span>
+            </div>
+            <div style="font-weight:bold; color:#aaa; font-size:1.1em;">White</div>
+          </div>
+        </div>
+        <p style="margin-top:1.5rem; font-size:1.1em; color:#444; text-align:center;">
+          <span id="dress-message">Let’s make the day shine! Kindly wear <span style="color:#b7791f;font-weight:bold;">Gold</span> and <span style="color:#aaa;font-weight:bold;">White</span> attire for a radiant celebration. Your style, your comfort—just keep it elegant and festive!</span>
+        </p>
+        <div style="text-align:center; margin-top:1.2rem;">
+          <button id="dress-ideas-btn" class="surprise-btn" style="background:linear-gradient(90deg,#ffd700 0%,#fff 100%); color:#b7791f; font-weight:bold; border:1px solid #ffd700;">💡 Show Outfit Ideas</button>
+        </div>
+        <div id="dress-ideas-list" style="display:none; margin-top:1.2rem; text-align:center;">
+          <ul style="list-style:none; padding:0; margin:0; color:#b7791f; font-size:1em;">
+            <li>• White Agbada with gold embroidery</li>
+            <li>• Gold & white Ankara dresses</li>
+            <li>• White kaftan with gold accents</li>
+            <li>• Gold gele or cap with white attire</li>
+            <li>• Elegant gold jewelry on white</li>
+          </ul>
+        </div>
+      </div>
+      <style>
+        #dress-code-section h2:hover {
+          color: #ffd700;
+          letter-spacing: 1px;
+          cursor: pointer;
+        }
+        #dress-code-content {
+          box-shadow: 0 4px 18px #ffd70011;
+        }
+        #dress-ideas-btn {
+          background: linear-gradient(90deg,#ffd700 0%,#fff 100%);
+          color: #b7791f;
+          border: 1px solid #ffd700;
+          font-weight: bold;
+          transition: background 0.3s, color 0.2s;
+        }
+        #dress-ideas-btn:hover {
+          background: linear-gradient(90deg,#fff 0%,#ffd700 100%);
+          color: #d6336c;
+        }
+        @media (max-width: 600px) {
+          #dress-code-content {
+            padding: 1rem 0.5rem;
+          }
+          #dress-code-content > div[style*="display:flex"] {
+            flex-direction: column !important;
+            gap: 0.7rem !important;
+          }
+        }
+      </style>
+      <script>
+        // Dress Code Section Toggle
+        const dressTitle = document.querySelector('#dress-code-section h2');
+        const dressContent = document.getElementById('dress-code-content');
+        const dressIcon = document.getElementById('dress-toggle-icon');
+        let dressOpen = true;
+        dressTitle.onclick = function() {
+          dressOpen = !dressOpen;
+          if(dressOpen) {
+            dressContent.style.maxHeight = '600px';
+            dressContent.style.opacity = '1';
+            dressIcon.style.transform = 'rotate(0deg)';
+            dressIcon.innerHTML = '&#9660;';
+          } else {
+            dressContent.style.maxHeight = '0';
+            dressContent.style.opacity = '0';
+            dressIcon.style.transform = 'rotate(-90deg)';
+            dressIcon.innerHTML = '&#9654;';
+          }
+        };
+
+        // Outfit Ideas Toggle
+        const ideasBtn = document.getElementById('dress-ideas-btn');
+        const ideasList = document.getElementById('dress-ideas-list');
+        let ideasOpen = false;
+        ideasBtn.onclick = function() {
+          ideasOpen = !ideasOpen;
+          ideasList.style.display = ideasOpen ? 'block' : 'none';
+          ideasBtn.textContent = ideasOpen ? '🙈 Hide Outfit Ideas' : '💡 Show Outfit Ideas';
+        };
+      </script>
+    </div>
+
+    <div class="section">
+      <!-- Modern Interactive Tools Section -->
+      <div class="section" id="modern-tools-section" style="margin-bottom:2rem;">
+        <h3 style="color:#006400;">📝 RSVP & Guestbook</h3>
+        <script>
+          // Override RSVP form to submit to Formspree
+          document.addEventListener('DOMContentLoaded', function() {
+            const rsvpForm = document.getElementById('rsvp-form');
+            if (rsvpForm) {
+              rsvpForm.onsubmit = function(e) {
+          e.preventDefault();
+          const name = document.getElementById('rsvp-name').value.trim();
+          const guests = document.getElementById('rsvp-guests').value.trim();
+          const attend = document.getElementById('rsvp-attend').value;
+            fetch('https://formspree.io/f/mrbkogby', {
+            method: 'POST',
+            headers: { 'Accept': 'application/json' },
+            body: new FormData(rsvpForm)
+          }).then(() => {
+            document.getElementById('rsvp-success').textContent = "Thank you for your RSVP! 🎉";
+            document.getElementById('rsvp-success').style.display = 'block';
+            setTimeout(() => {
+              document.getElementById('rsvp-modal').style.display = 'none';
+              document.getElementById('rsvp-success').style.display = 'none';
+            }, 1800);
+            rsvpForm.reset();
+          });
+              };
+            }
+          // Guestbook form to Formspree
+          const guestbookForm = document.getElementById('guestbook-form');
+          if (guestbookForm) {
+            guestbookForm.onsubmit = function(e) {
+              e.preventDefault();
+              const name = document.getElementById('guestbook-name').value.trim();
+              const message = document.getElementById('guestbook-message').value.trim();
+              fetch('https://formspree.io/f/xrbpdajp', {
+                method: 'POST',
+                headers: { 'Accept': 'application/json' },
+                body: new FormData(guestbookForm)
+              }).then(() => {
+                // Save to localStorage
+                let messages = [];
+                try {
+                  messages = JSON.parse(localStorage.getItem('guestbook') || '[]');
+                } catch (e) { messages = []; }
+                messages.push({ name, message });
+                localStorage.setItem('guestbook', JSON.stringify(messages));
+                renderGuestbook();
+                document.getElementById('guestbook-success').textContent = "Thank you for your wishes! 💌";
+                document.getElementById('guestbook-success').style.display = 'block';
+                setTimeout(() => {
+                  document.getElementById('guestbook-modal').style.display = 'none';
+                  document.getElementById('guestbook-success').style.display = 'none';
+                }, 1800);
+                guestbookForm.reset();
+              });
+            };
+          }
+          });
+        </script>
+        <div style="display:flex; flex-wrap:wrap; gap:1.5rem; justify-content:space-between;">
+          <!-- RSVP Button -->
+          <div style="flex:1 1 220px; min-width:220px; max-width:320px; background:#f8f8f8; border-radius:10px; padding:1.2rem; box-shadow:0 2px 8px rgba(0,0,0,0.07); text-align:center;">
+        <h4 style="margin-bottom:0.7rem; color:#d6336c; letter-spacing:1px; font-size:1.15rem; font-family:'Playfair Display',serif; text-shadow:0 2px 8px #ffa50044; transition:color 0.3s, text-shadow 0.3s; cursor:pointer;" onmouseover="this.style.color='#ffa500';this.style.textShadow='0 4px 16px #d6336c55';" onmouseout="this.style.color='#d6336c';this.style.textShadow='0 2px 8px #ffa50044';">
+          <span style="display:inline-block; animation: rsvpPulse 1.2s infinite alternate;">📝</span> RSVP Online
+        </h4>
+        <style>
+        @keyframes rsvpPulse {
+          0% { transform: scale(1); filter: drop-shadow(0 0 0 #ffa500); }
+          100% { transform: scale(1.18); filter: drop-shadow(0 0 8px #ffa50088); }
+        }
+        </style>
+        <button id="rsvp-btn" style="background:linear-gradient(90deg,#ffa500 0%,#d6336c 100%);color:#fff;border:none;padding:0.7rem 1.5rem;border-radius:8px;cursor:pointer;font-size:1rem;font-weight:bold;transition:background 0.2s;">RSVP Now</button>
+        <div id="rsvp-modal" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.35);z-index:9999;align-items:center;justify-content:center;">
+          <div style="background:#fff;padding:2rem 1.5rem;border-radius:12px;max-width:95vw;width:340px;box-shadow:0 8px 32px rgba(214,51,108,0.12);position:relative;">
+            <button id="close-rsvp" style="position:absolute;top:0.7rem;right:1rem;background:none;border:none;font-size:1.3rem;cursor:pointer;color:#d6336c;">&times;</button>
+            <h4 style="margin-bottom:1rem;color:#ffa500;">RSVP</h4>
+            <form id="rsvp-form">
+          <input type="text" id="rsvp-name" name="name" placeholder="Your Name" required style="width:100%;margin-bottom:0.7rem;padding:0.5rem;border-radius:6px;border:1px solid #eee;">
+          <input type="number" id="rsvp-guests" name="guests" placeholder="Number of Guests" min="1" max="10" required style="width:100%;margin-bottom:0.7rem;padding:0.5rem;border-radius:6px;border:1px solid #eee;">
+          <select id="rsvp-attend" name="attend" required style="width:100%;margin-bottom:0.7rem;padding:0.5rem;border-radius:6px;border:1px solid #eee;">
+            <option value="">Will you attend?</option>
+            <option value="Yes">Yes, InshaAllah</option>
+            <option value="No">Sorry, can't make it</option>
+          </select>
+          <button type="submit" style="background:#d6336c;color:#fff;border:none;padding:0.6rem 1.2rem;border-radius:8px;cursor:pointer;font-size:1rem;font-weight:bold;width:100%;">Submit</button>
+            </form>
+            <div id="rsvp-success" style="display:none;margin-top:1rem;color:#006400;font-weight:bold;"></div>
+          </div>
+        </div>
+          </div>
+          <!-- Digital Guestbook -->
+          <div style="flex:1 1 220px; min-width:220px; max-width:320px; background:#f8f8f8; border-radius:10px; padding:1.2rem; box-shadow:0 2px 8px rgba(0,0,0,0.07); text-align:center;">
+        <h4 style="margin-bottom:0.7rem; color:#b7791f;">Digital Guestbook</h4>
+        <button id="guestbook-btn" style="background:linear-gradient(90deg,#d6336c 0%,#ffa500 100%);color:#fff;border:none;padding:0.7rem 1.5rem;border-radius:8px;cursor:pointer;font-size:1rem;font-weight:bold;transition:background 0.2s;">Sign Guestbook</button>
+        <div id="guestbook-modal" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.35);z-index:9999;align-items:center;justify-content:center;">
+          <div style="background:#fff;padding:2rem 1.5rem;border-radius:12px;max-width:95vw;width:340px;box-shadow:0 8px 32px rgba(214,51,108,0.12);position:relative;">
+            <button id="close-guestbook" style="position:absolute;top:0.7rem;right:1rem;background:none;border:none;font-size:1.3rem;cursor:pointer;color:#d6336c;">&times;</button>
+            <h4 style="margin-bottom:1rem;color:#b7791f;">Leave a Message</h4>
+            <form id="guestbook-form">
+          <input type="text" id="guestbook-name" name="name" placeholder="Your Name" required style="width:100%;margin-bottom:0.7rem;padding:0.5rem;border-radius:6px;border:1px solid #eee;">
+          <textarea id="guestbook-message" name="message" placeholder="Your wishes..." required style="width:100%;margin-bottom:0.7rem;padding:0.5rem;border-radius:6px;border:1px solid #eee;min-height:60px;"></textarea>
+          <button type="submit" style="background:#ffa500;color:#fff;border:none;padding:0.6rem 1.2rem;border-radius:8px;cursor:pointer;font-size:1rem;font-weight:bold;width:100%;">Send</button>
+            </form>
+            <div id="guestbook-success" style="display:none;margin-top:1rem;color:#006400;font-weight:bold;"></div>
+          </div>
+        </div>
+          </div>
+        </div>
+        <!-- Guestbook Messages List -->
+        <div id="guestbook-list" style="margin-top:1.5rem;">
+          <h5 style="color:#d6336c;margin-bottom:0.5rem;transition:color 0.3s;">💬 All Wishes</h5>
+          <style>
+            #guestbook-list h5:hover {
+              color: #ffa500;
+              cursor: pointer;
+              transition: color 0.3s;
+              letter-spacing: 1px;
+              transform: scale(1.04);
+            }
+          </style>
+          <ul id="guestbook-messages" style="list-style:none;padding:0;margin:0;max-height:120px;overflow-y:auto;font-size:0.98rem;"></ul>
+        </div>
+      </div>
+      <script>
+        // RSVP Modal Logic
+        const rsvpBtn = document.getElementById('rsvp-btn');
+        const rsvpModal = document.getElementById('rsvp-modal');
+        const closeRsvp = document.getElementById('close-rsvp');
+        rsvpBtn.onclick = () => { rsvpModal.style.display = 'flex'; rsvpModal.style.alignItems = 'center'; rsvpModal.style.justifyContent = 'center'; };
+        closeRsvp.onclick = () => { rsvpModal.style.display = 'none'; };
+        window.addEventListener('click', e => { if(e.target === rsvpModal) rsvpModal.style.display = 'none'; });
+
+        // Guestbook Modal Logic
+        const guestbookBtn = document.getElementById('guestbook-btn');
+        const guestbookModal = document.getElementById('guestbook-modal');
+        const closeGuestbook = document.getElementById('close-guestbook');
+        guestbookBtn.onclick = () => { guestbookModal.style.display = 'flex'; guestbookModal.style.alignItems = 'center'; guestbookModal.style.justifyContent = 'center'; };
+        closeGuestbook.onclick = () => { guestbookModal.style.display = 'none'; };
+        window.addEventListener('click', e => { if(e.target === guestbookModal) guestbookModal.style.display = 'none'; });
+
+        // Guestbook Messages (localStorage)
+        function renderGuestbook() {
+          const list = document.getElementById('guestbook-messages');
+          list.innerHTML = '';
+          const messages = JSON.parse(localStorage.getItem('guestbook') || '[]');
+          messages.slice(-5).reverse().forEach(msg => {
+            const li = document.createElement('li');
+            li.innerHTML = `<strong>${msg.name}:</strong> ${msg.message}`;
+            list.appendChild(li);
+          });
+        }
+        renderGuestbook();
+      </script>
+      <style>
+        @media (max-width: 700px) {
+          #modern-tools-section > div[style*="display:flex"] {
+        flex-direction: column !important;
+        gap: 1rem !important;
+          }
+        }
+        #guestbook-list ul li {
+          background: #fffbe6;
+          margin-bottom: 0.4em;
+          padding: 0.5em 0.8em;
+          border-radius: 7px;
+          color: #444;
+        }
+      </style></div>
+
+      <!-- Modern Tools: Share, Save, Copy, and WhatsApp Invite -->
+      <div id="modern-tools-mobile" style="display:flex; flex-wrap:wrap; gap:1rem; margin:1.2rem 0;">
+        <!-- Share Button (Web Share API) -->
+        <button id="share-invite-btn" style="flex:1 1 120px; min-width:120px; background:#ffa500; color:#fff; border:none; padding:0.7rem 1.2rem; border-radius:8px; font-size:1rem; font-weight:bold; cursor:pointer; box-shadow:0 2px 8px rgba(214,51,108,0.10);">
+          📤 Share Invite
+        </button>
+        <!-- Copy Link Button -->
+        <button id="copy-invite-link-btn" style="flex:1 1 120px; min-width:120px; background:#d6336c; color:#fff; border:none; padding:0.7rem 1.2rem; border-radius:8px; font-size:1rem; font-weight:bold; cursor:pointer; box-shadow:0 2px 8px rgba(214,51,108,0.10);">
+          📋 Copy Link
+        </button>
+        <!-- WhatsApp Invite -->
+        <a id="whatsapp-invite-btn" href="#" target="_blank" style="flex:1 1 120px; min-width:120px; background:#25D366; color:#fff; border:none; padding:0.7rem 1.2rem; border-radius:8px; font-size:1rem; font-weight:bold; cursor:pointer; text-align:center; text-decoration:none; display:inline-block; box-shadow:0 2px 8px rgba(214,51,108,0.10);">
+          🟢 WhatsApp
+        </a>
+        <!-- Save to Calendar (ICS Download) -->
+        <a id="save-date-btn" href="data:text/calendar;charset=utf-8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ASUMMARY:Abiola%20Wedding%20Nikaah%0ADESCRIPTION:Join%20us%20for%20the%20wedding%20celebration!%0ADTSTART:20250726T090000Z%0ADTEND:20250726T130000Z%0ALOCATION:Akuro%20Mosque%2C%20Ibadan%2C%20Nigeria%0AEND:VEVENT%0AEND:VCALENDAR" download="AbiolaWedding.ics" style="flex:1 1 120px; min-width:120px; background:#006400; color:#fff; border:none; padding:0.7rem 1.2rem; border-radius:8px; font-size:1rem; font-weight:bold; cursor:pointer; text-align:center; text-decoration:none; display:inline-block; box-shadow:0 2px 8px rgba(214,51,108,0.10);">
+          📅 Save Date
+        </a>
+      </div>
+      <div id="copy-success-msg" style="display:none; color:#006400; font-size:1rem; margin-bottom:0.7rem; font-weight:bold;"></div>
+      <script>
+        // Share Invite (Web Share API)
+        document.getElementById('share-invite-btn').onclick = function() {
+          if (navigator.share) {
+            navigator.share({
+              title: "Abiola Wedding Invitation",
+              text: "You're invited to Abiola's Wedding! 🎉 See details and RSVP here:",
+              url: window.location.href
+            });
+          } else {
+            alert("Sharing not supported on this device. Please copy the link instead.");
+          }
+        };
+        // Copy Link
+        document.getElementById('copy-invite-link-btn').onclick = function() {
+          navigator.clipboard.writeText(window.location.href).then(function() {
+            const msg = document.getElementById('copy-success-msg');
+            msg.textContent = "Link copied! Share it with your friends 🎉";
+            msg.style.display = "block";
+            setTimeout(() => { msg.style.display = "none"; }, 1800);
+          });
+        };
+        // WhatsApp Invite (dynamic link)
+        document.getElementById('whatsapp-invite-btn').onclick = function(e) {
+          e.preventDefault();
+          const text = encodeURIComponent("You're invited to Abiola's Wedding! 🎉 See details and RSVP here: " + window.location.href);
+          window.open("https://wa.me/?text=" + text, "_blank");
+        };
+      </script>
+      <style>
+        #modern-tools-mobile button, #modern-tools-mobile a {
+          transition: background 0.2s, transform 0.15s;
+        }
+        #modern-tools-mobile button:hover, #modern-tools-mobile a:hover {
+          transform: scale(1.04);
+          filter: brightness(1.08);
+        }
+        @media (max-width: 600px) {
+          #modern-tools-mobile {
+            flex-direction: column !important;
+            gap: 0.7rem !important;
+          }
+        }
+      </style>
+      <!-- 🌹 Gentle Reminder Section 🌹 -->  
+      <section id="gentle-reminder-section" style="margin-bottom:2.5rem;">
+        <div id="gentle-reminder-header" style="display:flex;align-items:center;gap:0.7em;cursor:pointer;justify-content:center;">
+          <span style="font-size:1.6em;">🌹</span>
+          <h2 style="margin:0;color:#d6336c;font-family:'Playfair Display',serif;font-size:1.3em;">A Gentle Reminder to Those Yet to Marry</h2>
+          <span id="gentle-toggle-icon" style="font-size:1.2em;transition:transform 0.3s;">&#9660;</span>
+        </div>
+        <div id="gentle-reminder-content" style="background:linear-gradient(90deg,#fffbe6 60%,#fff 100%);border-radius:12px;padding:1.5rem 2rem;margin-top:1.1rem;box-shadow:0 2px 12px #d6336c11;transition:max-height 0.5s cubic-bezier(.4,0,.2,1),opacity 0.5s;overflow:hidden;max-height:1200px;opacity:1;">
+          <blockquote style="font-style:italic;color:#006400;border-left:4px solid #d6336c;padding-left:1em;margin-bottom:1em;">
+            “And among His signs is that He created for you from yourselves mates that you may find tranquility in them, and He placed between you affection and mercy.”<br>
+            <span style="font-size:0.98em;color:#b7791f;">— Qur’an 30:21</span>
+          </blockquote>
+          <p style="font-size:1.08em;color:#444;margin-bottom:1em;">
+            Marriage is not just a union of two people, it is the completion of half your deen. It is peace, companionship, mercy, and spiritual growth — all wrapped in one blessing.
+          </p>
+          <blockquote style="font-style:italic;color:#d6336c;border-left:4px solid #ffa500;padding-left:1em;margin-bottom:1em;">
+            The Prophet ﷺ said:<br>
+            <span style="color:#006400;">"When a man marries, he has fulfilled half of his religion, so let him fear Allah regarding the remaining half."</span><br>
+            <span style="font-size:0.98em;color:#b7791f;">— (Bayhaqi)</span>
+          </blockquote>
+          <p style="color:#444;margin-bottom:1em;">
+            Don’t delay it unnecessarily. If you are capable, take that step — even if it seems small. Allah promises ease:
+          </p>
+          <blockquote style="font-style:italic;color:#006400;border-left:4px solid #d6336c;padding-left:1em;margin-bottom:1em;">
+            “If they are poor, Allah will enrich them from His bounty.”<br>
+            <span style="font-size:0.98em;color:#b7791f;">— Qur’an 24:32</span>
+          </blockquote>
+          <ul id="gentle-benefits-list" style="list-style:none;padding:0;margin-bottom:1.2em;color:#d6336c;font-size:1.08em;">
+            <li>• Tranquility of the heart <span aria-label="heart" style="color:#d6336c;">❤️</span></li>
+            <li>• Guarding one’s modesty <span aria-label="modesty" style="color:#aaa;">🤍</span></li>
+            <li>• Building a home upon love and faith <span aria-label="home" style="color:#b7791f;">🏠</span></li>
+            <li>• The joy of being with someone who makes du’a for you <span aria-label="dua" style="color:#006400;">🤲</span></li>
+          </ul>
+          <div id="gentle-dua" style="background:linear-gradient(90deg,#fffbe6 60%,#fff 100%);border-radius:8px;padding:1em 1.2em;text-align:center;color:#006400;font-weight:bold;font-size:1.08em;box-shadow:0 2px 8px #00640011;">
+            May Allah bless all our unmarried brothers and sisters with righteous, loving, and compatible spouses — and make their union a source of happiness in both this life and the next. <span style="font-family:'Scheherazade New',serif;font-size:1.1em;color:#d6336c;">آمين</span>.
+          </div>
+        </div>
+        <style>
+          #gentle-reminder-header:hover h2 {
+            color: #ffa500;
+            letter-spacing: 1px;
+            transition: color 0.3s, letter-spacing 0.3s;
+          }
+          #gentle-reminder-content {
+            box-shadow: 0 4px 18px #d6336c11;
+          }
+          @media (max-width: 600px) {
+            #gentle-reminder-content {
+              padding: 1rem 0.7rem;
+            }
+            #gentle-reminder-header h2 {
+              font-size: 1.05em;
+            }
+            #gentle-benefits-list {
+              font-size: 0.98em;
+            }
+          }
+        </style>
+        <script>
+          // Gentle Reminder Section Toggle
+          const gentleHeader = document.getElementById('gentle-reminder-header');
+          const gentleContent = document.getElementById('gentle-reminder-content');
+          const gentleIcon = document.getElementById('gentle-toggle-icon');
+          let gentleOpen = true;
+          gentleHeader.onclick = function() {
+            gentleOpen = !gentleOpen;
+            if(gentleOpen) {
+              gentleContent.style.maxHeight = '1200px';
+              gentleContent.style.opacity = '1';
+              gentleIcon.style.transform = 'rotate(0deg)';
+              gentleIcon.innerHTML = '&#9660;';
+            } else {
+              gentleContent.style.maxHeight = '0';
+              gentleContent.style.opacity = '0';
+              gentleIcon.style.transform = 'rotate(-90deg)';
+              gentleIcon.innerHTML = '&#9654;';
+            }
+          };
+        </script>
+      </section>
+
+      <!-- 🌿 Married Couples Blessing Section -->
+      <section id="married-blessing-section" style="margin-bottom:2.5rem;">
+        <div id="married-blessing-header" style="display:flex;align-items:center;gap:0.7em;cursor:pointer;justify-content:center;">
+          <span style="font-size:1.6em;">🌿</span>
+          <h2 style="margin:0;color:#006400;font-family:'Playfair Display',serif;font-size:1.2em;">A Special Prayer for All Married Couples</h2>
+          <span id="married-blessing-toggle-icon" style="font-size:1.2em;transition:transform 0.3s;">&#9660;</span>
+        </div>
+        <div id="married-blessing-content" style="background:linear-gradient(90deg,#fffbe6 60%,#fff 100%);border-radius:12px;padding:1.5rem 2rem;margin-top:1.1rem;box-shadow:0 2px 12px #00640011;transition:max-height 0.5s cubic-bezier(.4,0,.2,1),opacity 0.5s;overflow:hidden;max-height:1200px;opacity:1;">
+          <blockquote style="font-style:italic;color:#d6336c;border-left:4px solid #006400;padding-left:1em;margin-bottom:1em;">
+            “Our Lord, grant us from among our spouses and offspring comfort to our eyes and make us an example for the righteous.”<br>
+            <span style="font-size:0.98em;color:#b7791f;">— Qur’an 25:74</span>
+          </blockquote>
+          <p style="font-size:1.08em;color:#444;margin-bottom:1em;">
+            May Allah bless every married man and woman with love, mercy, and tranquility. May your homes be filled with light, your hearts with peace, and your lives with endless barakah.
+          </p>
+          <ul id="married-blessing-benefits" style="list-style:none;padding:0;margin-bottom:1.2em;color:#006400;font-size:1.08em;">
+            <li>• May your love grow stronger each day 💞</li>
+            <li>• May you be each other's garment and comfort 🤗</li>
+            <li>• May your union be a source of joy and faith 🌸</li>
+            <li>• May Allah protect you from every hardship and grant you ease 🌿</li>
+          </ul>
+          <div style="text-align:center;">
+            <button id="send-blessing-btn" class="surprise-btn" style="background:linear-gradient(90deg,#006400 0%,#ffa500 100%);color:#fff;font-weight:bold;margin-top:1em;">🤲 Send a Blessing</button>
+            <div id="married-blessing-toast" style="display:none;margin-top:1em;text-align:center;color:#d6336c;font-weight:bold;"></div>
+          </div>
+        </div>
+        <style>
+          #married-blessing-header:hover h2 {
+            color: #ffa500;
+            letter-spacing: 1px;
+            transition: color 0.3s, letter-spacing 0.3s;
+          }
+          #married-blessing-content {
+            box-shadow: 0 4px 18px #00640011;
+          }
+          #send-blessing-btn {
+            font-size: 1rem;
+            border: none;
+            border-radius: 8px;
+            padding: 0.6rem 1.4rem;
+            cursor: pointer;
+            transition: background 0.3s, color 0.2s, transform 0.2s;
+          }
+          #send-blessing-btn:hover {
+            background: linear-gradient(90deg,#ffa500 0%,#006400 100%);
+            color: #fffbe6;
+            transform: scale(1.04);
+          }
+          @media (max-width: 600px) {
+            #married-blessing-content {
+              padding: 1rem 0.7rem;
+            }
+            #married-blessing-header h2 {
+              font-size: 1.05em;
+            }
+            #married-blessing-benefits {
+              font-size: 0.98em;
+            }
+          }
+        </style>
+        <script>
+          // Toggle Married Blessing Section
+          const marriedBlessingHeader = document.getElementById('married-blessing-header');
+          const marriedBlessingContent = document.getElementById('married-blessing-content');
+          const marriedBlessingIcon = document.getElementById('married-blessing-toggle-icon');
+          let marriedBlessingOpen = true;
+          marriedBlessingHeader.onclick = function() {
+            marriedBlessingOpen = !marriedBlessingOpen;
+            if(marriedBlessingOpen) {
+              marriedBlessingContent.style.maxHeight = '1200px';
+              marriedBlessingContent.style.opacity = '1';
+              marriedBlessingIcon.style.transform = 'rotate(0deg)';
+              marriedBlessingIcon.innerHTML = '&#9660;';
+            } else {
+              marriedBlessingContent.style.maxHeight = '0';
+              marriedBlessingContent.style.opacity = '0';
+              marriedBlessingIcon.style.transform = 'rotate(-90deg)';
+              marriedBlessingIcon.innerHTML = '&#9654;';
+            }
+          };
+
+          // Dynamic Blessing Toast
+          const marriedBlessings = [
+            "May Allah unite your hearts in goodness and grant you a home of peace and faith. آمين",
+            "May your marriage be a source of mercy, love, and endless happiness. آمين",
+            "May Allah grant you righteous children and make your union a means to Jannah. آمين",
+            "May your love be renewed every day and your hardships be lightened by His mercy. آمين",
+            "May Allah protect your marriage from every harm and fill it with barakah. آمين"
+          ];
+          document.getElementById('send-blessing-btn').onclick = function() {
+            const toast = document.getElementById('married-blessing-toast');
+            toast.textContent = marriedBlessings[Math.floor(Math.random()*marriedBlessings.length)];
+            toast.style.display = 'block';
+            setTimeout(()=>{toast.style.display='none';}, 2200);
+          };
+        </script>
+      </section>
+       
+      <h2 id="quran-sunnah-title" style="cursor:pointer; display:flex; align-items:center; gap:0.6em;">
+        <span>📖 Qur'an & Sunnah</span>
+        <span id="quran-toggle-icon" style="font-size:1.3em; transition:transform 0.3s;">&#9660;</span>
+      </h2>
+      <div id="quran-sunnah-content" style="background:#f8f8f8; border-radius:10px; padding:1.2rem 1.5rem; margin-bottom:1.5rem; box-shadow:0 2px 8px rgba(0,0,0,0.04); transition:max-height 0.5s cubic-bezier(.4,0,.2,1), opacity 0.5s; overflow:hidden; max-height:1200px; opacity:1;">
+        <h3>Qur'an 30:21</h3>
+        <p class="arabic">وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً</p>
+        <p>And among His signs is that He created for you spouses from among yourselves so that you may find tranquility in them; and He placed between you love and mercy. Indeed in that are signs for a people who reflect.</p>
+        <h3>Qur'an 24:32</h3>
+        <p class="arabic">وَأَنكِحُوا الْأَيَامَىٰ مِنكُمْ وَالصَّالِحِينَ مِنْ عِبَادِكُمْ وَإِمَائِكُمْ ۚ إِن يَكُونُوا فُقَرَاءَ يُغْنِهِمُ اللَّهُ مِن فَضْلِهِ</p>
+        <p>"Marry off those who are single among you, and the righteous among your male and female slaves. If they are poor, Allah will enrich them out of His bounty."</p>
+        <h3>Hadith</h3>
+        <p class="arabic">النِّكَاحُ مِنْ سُنَّتِي، فَمَنْ رَغِبَ عَنْ سُنَّتِي فَلَيْسَ مِنِّي</p>
+        <p>“Marriage is part of my Sunnah. Whoever turns away from my Sunnah is not from me.”</p>
+      </div>
+      <style>
+        #quran-sunnah-title:hover {
+          color: #ffa500;
+          letter-spacing: 1px;
+        }
+        #quran-sunnah-content {
+          box-shadow: 0 4px 18px rgba(214,51,108,0.07);
+        }
+        @media (max-width: 600px) {
+          #quran-sunnah-content {
+        padding: 1rem 0.7rem;
+          }
+        }
+      </style>
+      <script>
+        // Interactive Qur'an & Sunnah Section
+        const quranTitle = document.getElementById('quran-sunnah-title');
+        const quranContent = document.getElementById('quran-sunnah-content');
+        const quranIcon = document.getElementById('quran-toggle-icon');
+        let quranOpen = true;
+        quranTitle.onclick = function() {
+          quranOpen = !quranOpen;
+          if(quranOpen) {
+        quranContent.style.maxHeight = '1200px';
+        quranContent.style.opacity = '1';
+        quranIcon.style.transform = 'rotate(0deg)';
+        quranIcon.innerHTML = '&#9660;';
+          } else {
+        quranContent.style.maxHeight = '0';
+        quranContent.style.opacity = '0';
+        quranIcon.style.transform = 'rotate(-90deg)';
+        quranIcon.innerHTML = '&#9654;';
+          }
+        };
+      </script>
+
+      <!-- 🌙 Arabic Wedding Poem Section -->
+      <section id="arabic-poem-section" style="margin-bottom:2.5rem;">
+        <div id="arabic-poem-header" style="display:flex;align-items:center;gap:0.7em;cursor:pointer;justify-content:center;">
+          <span style="font-size:1.6em;">🌙</span>
+          <h2 style="margin:0;color:#006400;font-family:'Playfair Display',serif;font-size:1.2em;"> تَهَانِيُّ الزِّفَافِ لِعُثْمَانَ وَآمِنَةَ</h2>
+          <span id="arabic-poem-toggle-icon" style="font-size:1.2em;transition:transform 0.3s;">&#9660;</span>
+        </div>
+        <div id="arabic-poem-content" style="background:linear-gradient(90deg,#fffbe6 60%,#fff 100%);border-radius:12px;padding:1.5rem 2rem;margin-top:1.1rem;box-shadow:0 2px 12px #00640011;transition:max-height 0.5s cubic-bezier(.4,0,.2,1),opacity 0.5s;overflow:hidden;max-height:2000px;opacity:1;">
+          <div style="font-family:'Scheherazade New',serif;direction:rtl;font-size:1.25em;color:#333;line-height:2;text-align:center;">
+            <div id="arabic-poem-lines" style="max-height:400px;overflow-y:auto;">
+              تَسَامَى السُّرُورُ وَجَاءَ الْقَمَرْ<br>
+              وَبَشَّرَ عُرْسُكُمُو مِنْ نَثَرْ<br><br>
+              أُعْثُمَانُ يَمْضِي بِخُطْوِ الْهُدَى<br>
+              وَزَهْرُ الْأَمَانِ لَهُ قَدْ أَنَارْ<br><br>
+              وَآمِنَةُ النُّورِ زُفَّتْ لَهُ<br>
+              كَأَنَّ اللَّيَالِيَ بِهَا قَدْ بَشَرْ<br><br>
+              تَلَاقَى الصَّفَاءُ، وَعِطْرُ الْوَفَا<br>
+              تَدَلَّى عَلَى الدَّرْبِ حَتَّى انْتَشَرْ<br><br>
+              فَكُونُوا عَلَى الْحَقِّ دَرْبًا بِهِ<br>
+              يَزِينُ الثَّبَاتُ وَيُمْحَى الْخَطَرْ<br><br>
+              وَصُونُوا الْمَوَدَّةَ فِي نُطْقِهَا<br>
+              وَإِنْ مَسَّكُمْ مِنْ جَفَاهَا الْكَدَرْ<br><br>
+              فَبَيْتٌ عَلَى الْبِرِّ لَا يَنْثَنِي<br>
+              وَلَوْ زَاحَمَتْهُ رِيَاحُ الْقَدَرْ<br><br>
+              وَلِلْأَهْلِ، يَا رَبِّ، زِدْ رِفْعَةً<br>
+              بِهَا يَسْتَظِلُّ الزَّمَانُ الْفَخَرْ<br><br>
+              دَعَوْنَا لَكُمْ بِدُعَاءِ الْمَدَى<br>
+              بِأَنْ لَا تَذُوقُوا سِوَى مَا يُسَرْ<br><br>
+              فَيَا رَبَّ بَارِكْ، وَيَا رَبَّ تَمِّمْ<br>
+              بِفَضْلِكَ مَا قَدْ بَدَا وَازْدَهَرْ<br><br>
+              وَأَلْبِسْهُمَا لِبْسَ عِطْرٍ وَرُوحٍ<br>
+              تَفِيضُ عَلَى الْقَلْبِ مِثْلَ الْمَطَرْ<br><br>
+              إِلَهِي وَهَبْتَ الْقُلُوبَ النُّضَرْ<br>
+              وَجَمَّلْتَ دَرْبَ الْمُحِبِّ زَهَرْ<br><br>
+              فَبَارِكْ لِعُثْمَانَ فِي زَوْجِهِ<br>
+              وَآمِنَةَ الطُّهْرِ، زِدْهَا ظُفَرْ<br><br>
+              وَأَلِّفْ قُلُوبَهُمَا بِالْهُدَى<br>
+              وَأَنْزِلْ عَلَى دَرْبِهِمْ مِنْ وَطَرْ<br><br>
+              وَطَيِّبْ لَهُمْ عَيْشَ فِي أُلْفَةٍ<br>
+              تَظَلُّ اللَّيَالِي بِهِ لَا ضَرَرْ<br><br>
+              وَلَا تَجْعَلِ الْحُزْنَ بَيْنَ الْمَدَى<br>
+              وَلَا نَغْمَةَ الشَّكِّ فِيمَنْ سَمِرْ<br><br>
+              وَزِدْ فِي الرِّضَا، وَالسَّنَا، وَالْهَنَا<br>
+              وَأَبْعِدْ عَنِ الْعَهْدِ كُلَّ كَدَرْ<br><br>
+              وَاجْعَلْ لَهُمْ نُورًا فِي دَرْبِهِمْ<br>
+              وَأُنْسًا يَلُوحُ إِذَا مَا سَهَرْ<br><br>
+              تَهَانِيُّنَا لِلْأُلَى أَنْجَبُوا<br>
+              لِعُثْمَانَ زَيْنَ الشَّبَابِ الْمُنِيرْ<br><br>
+              وَأُسْرَةِ "آمِنَةَ" الطَّيِّبَةِ<br>
+              دُعَاءُ الْقُلُوبِ بِحُسْنِ الثَّمَرْ<br><br>
+              أَيَا رَبَّ هَذَا رَجَاءُ الْقُلُوبِ<br>
+              فَحَقِّقْ بِعَطْفِكَ أَحْلَى الْبَشَرْ<br><br>
+              صَلَاةً سَلَامًا عَلَى الْمُصْطَفَى<br>
+              شَذِيِّ السَّجَايَا، جَلِيلِ الْقَدَرْ
+            </div>
+            <button id="copy-arabic-poem-btn" class="surprise-btn" style="margin-top:1.5em;background:linear-gradient(90deg,#006400 0%,#ffa500 100%);color:#fff;font-weight:bold;">📋 نسخ القصيدة</button>
+            <div id="arabic-poem-toast" style="display:none;margin-top:1em;text-align:center;color:#d6336c;font-weight:bold;"></div>
+          </div>
+        </div>
+        <style>
+          #arabic-poem-header:hover h2 {
+            color: #ffa500;
+            letter-spacing: 1px;
+            transition: color 0.3s, letter-spacing 0.3s;
+          }
+          #arabic-poem-content {
+            box-shadow: 0 4px 18px #00640011;
+          }
+          #copy-arabic-poem-btn {
+            font-size: 1rem;
+            border: none;
+            border-radius: 8px;
+            padding: 0.6rem 1.4rem;
+            cursor: pointer;
+            transition: background 0.3s, color 0.2s, transform 0.2s;
+          }
+          #copy-arabic-poem-btn:hover {
+            background: linear-gradient(90deg,#ffa500 0%,#006400 100%);
+            color: #fffbe6;
+            transform: scale(1.04);
+          }
+          @media (max-width: 600px) {
+            #arabic-poem-content {
+              padding: 1rem 0.7rem;
+            }
+            #arabic-poem-header h2 {
+              font-size: 1.05em;
+            }
+            #arabic-poem-lines {
+              font-size: 1.05em;
+              max-height: 220px;
+            }
+          }
+        </style>
+        <script>
+          // Toggle Arabic Poem Section
+          const arabicPoemHeader = document.getElementById('arabic-poem-header');
+          const arabicPoemContent = document.getElementById('arabic-poem-content');
+          const arabicPoemIcon = document.getElementById('arabic-poem-toggle-icon');
+          let arabicPoemOpen = true;
+          arabicPoemHeader.onclick = function() {
+            arabicPoemOpen = !arabicPoemOpen;
+            if(arabicPoemOpen) {
+              arabicPoemContent.style.maxHeight = '2000px';
+              arabicPoemContent.style.opacity = '1';
+              arabicPoemIcon.style.transform = 'rotate(0deg)';
+              arabicPoemIcon.innerHTML = '&#9660;';
+            } else {
+              arabicPoemContent.style.maxHeight = '0';
+              arabicPoemContent.style.opacity = '0';
+              arabicPoemIcon.style.transform = 'rotate(-90deg)';
+              arabicPoemIcon.innerHTML = '&#9654;';
+            }
+          };
+
+          // Copy Arabic Poem to Clipboard
+          document.getElementById('copy-arabic-poem-btn').onclick = function() {
+            const poem = document.getElementById('arabic-poem-lines').innerText;
+            navigator.clipboard.writeText(poem).then(() => {
+              const toast = document.getElementById('arabic-poem-toast');
+              toast.textContent = "تم نسخ القصيدة! (Poem copied!)";
+              toast.style.display = 'block';
+              setTimeout(()=>{toast.style.display='none';}, 1800);
+            });
+          };
+        </script>
+      </section>
+    <!-- 🌟 English Wedding Poem Section -->
+    <section id="english-poem-section" style="margin-bottom:2.5rem;">
+      <div id="english-poem-header" style="display:flex;align-items:center;gap:0.7em;cursor:pointer;justify-content:center;">
+        <span style="font-size:1.6em;">🌟</span>
+        <h2 style="margin:0;color:#006400;font-family:'Playfair Display',serif;font-size:1.2em;">Wedding Poem for Uthman &amp; Aaminah</h2>
+        <span id="english-poem-toggle-icon" style="font-size:1.2em;transition:transform 0.3s;">&#9660;</span>
+      </div>
+      <div id="english-poem-content" style="background:linear-gradient(90deg,#fffbe6 60%,#fff 100%);border-radius:12px;padding:1.5rem 2rem;margin-top:1.1rem;box-shadow:0 2px 12px #00640011;transition:max-height 0.5s cubic-bezier(.4,0,.2,1),opacity 0.5s;overflow:hidden;max-height:2000px;opacity:1;">
+        <div id="english-poem-lines" style="font-family:'Playfair Display',serif;font-size:1.08em;color:#333;line-height:2;text-align:center;max-height:400px;overflow-y:auto;">
+          Joy has risen high, and the moon has appeared,<br>
+          Your wedding is announced with showers of cheer.<br><br>
+          Uthman walks in the footsteps of guidance,<br>
+          And the blossoms of peace light his path with radiance.<br><br>
+          Aaminah of light is brought to him in joy,<br>
+          As if the nights themselves came to celebrate and deploy.<br><br>
+          Purity met loyalty, fragrant with love,<br>
+          It descended on their path and blossomed above.<br><br>
+          So walk the path of truth with steady pace,<br>
+          With firmness adorned, and danger erased.<br><br>
+          Protect your love in what you speak,<br>
+          Even if distance brings moments weak.<br><br>
+          A home built on piety shall never fall,<br>
+          Even if fate’s winds shake its wall.<br><br>
+          O Lord, raise the families in honor and grace,<br>
+          That time itself may rest in their noble place.<br><br>
+          We pray for you with lasting supplication,<br>
+          That you know nothing but joy and elation.<br><br>
+          O Lord, bless them, and complete with light,<br>
+          What has begun and bloomed so bright.<br><br>
+          Clothe them in scent and spirit pure,<br>
+          That pours on the heart like gentle pour.<br><br>
+          O my Lord, You gave hearts their bloom,<br>
+          And adorned the path of lovers with perfume.<br><br>
+          So bless Uthman in his chosen bride,<br>
+          And grant Aaminah triumph, deep and wide.<br><br>
+          Unite their hearts upon Your light,<br>
+          And descend upon their path delight.<br><br>
+          Make their life sweet in harmony’s blend,<br>
+          With nights that pass in peace, no end.<br><br>
+          Let no sadness cloud their span,<br>
+          Nor doubt disturb their gentle plan.<br><br>
+          Increase in them contentment, light, and ease,<br>
+          And keep all harm from their love’s peace.<br><br>
+          Make light shine on their married way,<br>
+          And companionship glow at the end of day.<br><br>
+          Our congratulations to those who raised,<br>
+          Uthman — youth of brightest praise.<br><br>
+          And to the noble family of Aaminah, pure,<br>
+          Our hearts’ prayers for sweet reward endure.<br><br>
+          O Lord, this is the hearts’ true plea —<br>
+          Make their sweetest hopes reality.<br><br>
+          Peace and blessings be upon Al-Mustafa,<br>
+          The fragrant in character, the noble in rank.
+        </div>
+        <button id="copy-english-poem-btn" class="surprise-btn" style="margin-top:1.5em;background:linear-gradient(90deg,#006400 0%,#ffa500 100%);color:#fff;font-weight:bold;">📋 Copy Poem</button>
+        <div id="english-poem-toast" style="display:none;margin-top:1em;text-align:center;color:#d6336c;font-weight:bold;"></div>
+      </div>
+      <style>
+        #english-poem-header:hover h2 {
+          color: #ffa500;
+          letter-spacing: 1px;
+          transition: color 0.3s, letter-spacing 0.3s;
+        }
+        #english-poem-content {
+          box-shadow: 0 4px 18px #00640011;
+        }
+        #copy-english-poem-btn {
+          font-size: 1rem;
+          border: none;
+          border-radius: 8px;
+          padding: 0.6rem 1.4rem;
+          cursor: pointer;
+          transition: background 0.3s, color 0.2s, transform 0.2s;
+        }
+        #copy-english-poem-btn:hover {
+          background: linear-gradient(90deg,#ffa500 0%,#006400 100%);
+          color: #fffbe6;
+          transform: scale(1.04);
+        }
+        @media (max-width: 600px) {
+          #english-poem-content {
+            padding: 1rem 0.7rem;
+          }
+          #english-poem-header h2 {
+            font-size: 1.05em;
+          }
+          #english-poem-lines {
+            font-size: 1em;
+            max-height: 220px;
+          }
+        }
+      </style>
+      <script>
+        // Toggle English Poem Section
+        const englishPoemHeader = document.getElementById('english-poem-header');
+        const englishPoemContent = document.getElementById('english-poem-content');
+        const englishPoemIcon = document.getElementById('english-poem-toggle-icon');
+        let englishPoemOpen = true;
+        englishPoemHeader.onclick = function() {
+          englishPoemOpen = !englishPoemOpen;
+          if(englishPoemOpen) {
+            englishPoemContent.style.maxHeight = '2000px';
+            englishPoemContent.style.opacity = '1';
+            englishPoemIcon.style.transform = 'rotate(0deg)';
+            englishPoemIcon.innerHTML = '&#9660;';
+          } else {
+            englishPoemContent.style.maxHeight = '0';
+            englishPoemContent.style.opacity = '0';
+            englishPoemIcon.style.transform = 'rotate(-90deg)';
+            englishPoemIcon.innerHTML = '&#9654;';
+          }
+        };
+
+        // Copy English Poem to Clipboard
+        document.getElementById('copy-english-poem-btn').onclick = function() {
+          const poem = document.getElementById('english-poem-lines').innerText;
+          navigator.clipboard.writeText(poem).then(() => {
+            const toast = document.getElementById('english-poem-toast');
+            toast.textContent = "Poem copied!";
+            toast.style.display = 'block';
+            setTimeout(()=>{toast.style.display='none';}, 1800);
+          });
+        };
+      </script>
+    </section>
+
+    <div class="section" id="enquiries-section" style="margin-bottom:2.5rem;">
+      <h2 style="color:#d6336c;display:flex;align-items:center;gap:0.5em;">
+        <span style="font-size:1.3em;">🌟</span>
+         <span>📞 For More Enquiries</span>
+        <span id="enquiries-toggle-icon" style="font-size:1.2em;transition:transform 0.3s;">&#9660;</span>
+      </h2>
+      <div id="enquiries-content" style="background:linear-gradient(90deg,#fffbe6 60%,#fff 100%);border-radius:10px;padding:1.3rem 1.5rem;margin-bottom:1.2rem;box-shadow:0 2px 8px #d6336c22;transition:max-height 0.5s cubic-bezier(.4,0,.2,1),opacity 0.5s;overflow:hidden;max-height:600px;opacity:1;">
+        <div style="display:flex;flex-wrap:wrap;gap:2rem;justify-content:space-between;">
+          <div style="flex:1 1 220px;min-width:200px;">
+            <h4 style="color:#006400;display:flex;align-items:center;gap:0.5em;font-size:1.1em;">
+              <span>👨‍💼 Male Guests (Brothers)</span>
+            </h4>
+            <ul style="list-style:none;padding:0;margin:0;">
+              <li>
+                <a href="tel:07019880683" class="enquiry-phone">
+                  <span style="font-weight:bold;">07019880683</span>
+                  <button class="call-btn" title="Call Now">📞</button>
+                </a>
+              </li>
+              <li>
+                <a href="tel:08152099188" class="enquiry-phone">
+                  <span style="font-weight:bold;">08152099188</span>
+                  <button class="call-btn" title="Call Now">📞</button>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div style="flex:1 1 220px;min-width:200px;">
+            <h4 style="color:#d6336c;display:flex;align-items:center;gap:0.5em;font-size:1.1em;">
+              <span>👩‍🦰 Female Guests (Sisters)</span>
+            </h4>
+            <ul style="list-style:none;padding:0;margin:0;">
+              <li>
+                <a href="tel:08088041544" class="enquiry-phone">
+                  <span style="font-weight:bold;">08088041544</span>
+                  <button class="call-btn" title="Call Now">📞</button>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="enquiry-toast" style="display:none;margin-top:1.2rem;text-align:center;color:#d6336c;font-weight:bold;"></div>
+      </div>
+      <style>
+        #enquiries-section h2:hover {
+          color: #ffa500;
+          letter-spacing: 1px;
+          cursor: pointer;
+        }
+        #enquiries-content {
+          box-shadow: 0 4px 18px #d6336c11;
+        }
+        .enquiry-phone {
+          display: flex;
+          align-items: center;
+          gap: 0.7em;
+          text-decoration: none;
+          color: #333;
+          margin-bottom: 0.7em;
+          font-size: 1.08em;
+          transition: color 0.2s;
+        }
+        .enquiry-phone:hover {
+          color: #d6336c;
+        }
+        .call-btn {
+          background: linear-gradient(90deg,#ffa500 0%,#d6336c 100%);
+          color: #fff;
+          border: none;
+          border-radius: 50%;
+          width: 2em;
+          height: 2em;
+          font-size: 1.1em;
+          cursor: pointer;
+          box-shadow: 0 2px 8px #ffa50033;
+          transition: background 0.3s, transform 0.2s;
+          margin-left: 0.2em;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .call-btn:hover {
+          background: linear-gradient(90deg,#d6336c 0%,#ffa500 100%);
+          transform: scale(1.08);
+        }
+        @media (max-width: 600px) {
+          #enquiries-content {
+            padding: 1rem 0.5rem;
+          }
+          #enquiries-content > div[style*="display:flex"] {
+            flex-direction: column !important;
+            gap: 1rem !important;
+          }
+        }
+      </style>
+      <script>
+        // Toggle Enquiries Section
+        const enquiriesTitle = document.querySelector('#enquiries-section h2');
+        const enquiriesContent = document.getElementById('enquiries-content');
+        const enquiriesIcon = document.getElementById('enquiries-toggle-icon');
+        let enquiriesOpen = true;
+        enquiriesTitle.onclick = function() {
+          enquiriesOpen = !enquiriesOpen;
+          if(enquiriesOpen) {
+            enquiriesContent.style.maxHeight = '600px';
+            enquiriesContent.style.opacity = '1';
+            enquiriesIcon.style.transform = 'rotate(0deg)';
+            enquiriesIcon.innerHTML = '&#9660;';
+          } else {
+            enquiriesContent.style.maxHeight = '0';
+            enquiriesContent.style.opacity = '0';
+            enquiriesIcon.style.transform = 'rotate(-90deg)';
+            enquiriesIcon.innerHTML = '&#9654;';
+          }
+        };
+
+        // Show toast on call button click
+        document.querySelectorAll('.call-btn').forEach(btn => {
+          btn.onclick = function(e) {
+            e.preventDefault();
+            const phone = this.parentElement.querySelector('span').textContent.trim();
+            const toast = document.getElementById('enquiry-toast');
+            toast.textContent = `Calling ${phone}...`;
+            toast.style.display = 'block';
+            setTimeout(()=>{toast.style.display='none';}, 1800);
+            window.location.href = `tel:${phone}`;
+          };
+        });
+      </script>
+    </div>
+  
+         
+  <footer id="dynamic-footer"></footer>
+    &copy; <span id="footer-year"></span> Abiola's Affairs | Designed by ASH-SHATIBIY 🌟
+  </footer>
+  <script>
+    // Dynamically set the current year in the footer
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+  </script>
+  <script>
+    const showSurprise = () => {
+      const msg = document.getElementById("surprise-msg");
+      msg.style.display = "block";
+      msg.textContent = "May your days be as sweet as honey and your hearts forever intertwined 💕🍯💑";
+    };
+
+    // Dynamic Love Story Toggle
+    function toggleLoveStory() {
+      const shortPara = document.getElementById('love-story-short');
+      const fullPara = document.getElementById('love-story-full');
+      const btn = document.getElementById('read-more-btn');
+      if (fullPara.style.display === 'none') {
+        fullPara.style.display = 'block';
+        shortPara.style.display = 'none';
+        btn.textContent = 'Show Less';
+      } else {
+        fullPara.style.display = 'none';
+        shortPara.style.display = 'block';
+        btn.textContent = 'Read More';
+      }
+    }
+
+    // Countdown Timer
+    const countdown = () => {
+      const countDate = new Date("July 26, 2025 00:00:00").getTime();
+      const now = new Date().getTime();
+      const gap = countDate - now;
+
+      const day = 1000 * 60 * 60 * 24;
+      const daysLeft = Math.floor(gap / day);
+
+      document.getElementById("countdown").textContent = `🕒 ${daysLeft} day(s) left until the Nikaah!`;
+    };
+    setInterval(countdown, 1000);
+  </script>
+   
+  </script>
+</body>
+</html>
